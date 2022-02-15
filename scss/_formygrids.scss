@@ -1,0 +1,25 @@
+/*Formulario de contacto */
+form{
+    padding: 50px;
+    color: black;
+    text-align: center;
+    
+}
+
+
+
+/* Aplicando Grids al index*/
+.grid {
+    display: grid;   
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(2, 10% 20%);
+    justify-content: center;
+}
+
+/* Aplicando Grids al equipo*/
+.gridEquipo{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}

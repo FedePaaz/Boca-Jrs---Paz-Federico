@@ -1,0 +1,405 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+/* Menu principal */
+header {
+  background: #062ca4;
+  background: linear-gradient(90deg, #062ca4 6%, rgba(238, 227, 6, 0.6899802157) 48%, #0013ff 100%);
+  color: yellow;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+/* Aplicando Efectos al menu */
+.menuDos {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.menuDos:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #fdf907;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.menuDos:hover:before, .menuDos:focus:before, .menuDos:active:before {
+  left: 0;
+  right: 0;
+}
+
+ul li {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  color: white;
+}
+
+section {
+  text-align: center;
+}
+
+footer {
+  background: #062ca4;
+  background: linear-gradient(90deg, #062ca4 6%, rgba(238, 227, 6, 0.6899802157) 48%, #0013ff 100%);
+  color: yellow;
+}
+
+.parrafo1 {
+  margin: 20px;
+  border: 10px groove;
+  color: yellow;
+}
+
+/*Bordes imagenes y altura*/
+.bordes {
+  border: solid 1px;
+}
+
+.bordesEquipo {
+  border: solid 5px;
+  width: 200px;
+  height: 200px;
+}
+
+/*texto de body */
+h2 {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+/* Aplicando al h2 animaciones */
+h2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+h2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+h2:hover:before, h2:focus:before, h2:active:before {
+  left: 0;
+  right: 0;
+}
+
+h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+/*fondo de pantalla */
+main {
+  background-image: url(fondo/fondo\ escudo.jpg);
+  background-position: center;
+  text-align: center;
+}
+
+.historia {
+  text-align: center;
+  padding: 10px;
+  color: #141413;
+  background: #062ca4;
+  background: linear-gradient(90deg, #062ca4 6%, rgba(238, 227, 6, 0.6899802157) 48%, #0013ff 100%);
+  border: 5px solid;
+}
+
+.equipoTec {
+  text-align: center;
+  padding: 10px;
+  color: blue;
+}
+
+/*Formulario de contacto */
+form {
+  padding: 50px;
+  color: black;
+  text-align: center;
+}
+
+/* Aplicando Grids al index*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  grid-template-rows: repeat(2, 10% 20%);
+  justify-content: center;
+}
+
+/* Aplicando Grids al equipo*/
+.gridEquipo {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+}
+
+/*DESKTOP*/
+@media (min-width: 1024px) {
+  /* Menu principal */
+  header {
+    background-color: blue;
+    color: yellow;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    transform: scale(5, 1);
+  }
+
+  ul li {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    color: white;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  footer {
+    color: yellow;
+  }
+
+  .parrafo1 {
+    margin: 20px;
+    border: 10px groove;
+    color: yellow;
+  }
+
+  /*Bordes imagenes y altura*/
+  .bordes {
+    border: solid 1px;
+  }
+
+  .bordesEquipo {
+    border: solid 5px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .bombonera {
+    display: flex;
+    width: 750px;
+    height: 750px;
+  }
+
+  /*texto de body */
+  h2 {
+    color: whitesmoke;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  /*fondo de pantalla */
+  main {
+    background-image: url(fondo/fondo\ escudo.jpg);
+    background-position: center;
+    text-align: center;
+  }
+
+  .historia {
+    text-align: center;
+    padding: 10px;
+    color: #141413;
+    border: 5px solid;
+  }
+
+  .equipoTec {
+    text-align: center;
+    padding: 10px;
+    color: blue;
+  }
+
+  /*Formulario de contacto */
+  form {
+    padding: 50px;
+    color: black;
+    text-align: center;
+  }
+
+  /* Aplicando Grids al index*/
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(2, 10% 20%);
+    justify-content: center;
+  }
+
+  /* Aplicando Grids al equipo*/
+  .gridEquipo {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+  }
+}
+/*TABLET*/
+@media (min-width: 601px) and (max-width: 1023px) {
+  ul li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    color: white;
+  }
+
+  .bordeEquipos {
+    display: flex;
+    height: 400px;
+    width: 400px;
+  }
+
+  .bombonera {
+    display: flex;
+    width: 490px;
+    height: 490px;
+  }
+
+  /* Aplicando Grids al index*/
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+
+  /* Aplicando Grids al equipo*/
+  .gridEquipo {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+  }
+}
+/*SMARTPHONE*/
+@media (max-width: 600px) {
+  ul li {
+    display: flex;
+    flex-flow: nowrap;
+    width: 350px;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  /*Bordes imagenes y altura*/
+  .bordeEquipos {
+    display: flex;
+    width: 270px;
+    height: 270px;
+  }
+
+  .parrafo1 {
+    margin: 20px;
+    border: 10px groove;
+    color: yellow;
+  }
+
+  .bordesEquipo {
+    border: solid 5px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .bombonera {
+    display: flex;
+    width: 290px;
+    height: 290px;
+  }
+
+  .form {
+    display: flex;
+    width: 210px;
+    height: 210px;
+  }
+
+  /*texto de body */
+  h2 {
+    color: whitesmoke;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  /*Formulario de contacto */
+  form {
+    padding: 50px;
+    color: black;
+    text-align: center;
+    background-color: whitesmoke;
+  }
+
+  /* Aplicando Grids al index*/
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+
+  /* Aplicando Grids al equipo*/
+  .gridEquipo {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+  }
+}
+ul li {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  color: blue;
+}
+
+/*# sourceMappingURL=destino.css.map */

@@ -1,0 +1,56 @@
+/* Aplicando al h2 animaciones */
+h2 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+h2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+h2:hover:before, h2:focus:before, h2:active:before {
+    left: 0;
+    right: 0;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+/*fondo de pantalla */
+main{
+    background-image: url(fondo/fondo\ escudo.jpg);
+    background-position:center;
+    text-align: center;
+}
+.historia{
+    text-align: center;
+    padding: 10px;
+    color: rgb(20, 20, 19);
+    background: rgb(6,44,164);
+    background: linear-gradient(90deg, rgba(6,44,164,1) 6%, rgba(238,227,6,0.6899802157191002) 48%, rgba(0,19,255,1) 100%);
+    border: 5px solid;
+}
+
+.equipoTec{
+    text-align: center;
+    padding: 10px;
+    color:  blue;
+}

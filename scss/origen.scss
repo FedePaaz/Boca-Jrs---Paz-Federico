@@ -1,0 +1,16 @@
+// IMPORT
+@import "estilosgenerales";
+@import "menuprincipal";
+@import "bordesybody";
+@import "animyfondo";
+@import "formygrids";
+@import "responsive";
+
+// VARIABLE
+$color: blue;
+ul li {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    color: $color;
+}
