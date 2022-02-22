@@ -15,7 +15,7 @@ header {
 
 .menu li a {
   text-decoration: none;
-  color: swhite;
+  color: white;
   font-size: 20px;
 }
 
@@ -70,7 +70,7 @@ footer {
   margin: 0;
 }
 
-ss .parrafo1 {
+.parrafo1 {
   margin: 20px;
   border: 10px groove;
   color: yellow;
@@ -395,7 +395,7 @@ form {
   /* Aplicando Grids al equipo*/
   .gridEquipo {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: repeat(2, 2fr);
     grid-column-gap: 10px;
     grid-row-gap: 15px;
   }
