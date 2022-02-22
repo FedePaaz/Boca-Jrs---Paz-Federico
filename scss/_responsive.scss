@@ -7,6 +7,7 @@
         padding: 10px;
         text-align: center;
     }
+
     .menu li a{
         text-decoration: none;
         transform: scale(5,1);
@@ -61,7 +62,7 @@
     
     /*fondo de pantalla */
     main{
-        background-image: url(fondo/fondo\ escudo.jpg);
+        background-image: url(../fondo/fondoescudo.jpg);
         background-position:center;
         text-align: center;
     }
@@ -125,6 +126,11 @@
             height: 490px;
         }
     
+        .parrafo1{
+            margin: 20px;
+            border: 10px groove;
+            color: yellow;
+        }
     /* Aplicando Grids al index*/
         .grid {
         display: grid;   
