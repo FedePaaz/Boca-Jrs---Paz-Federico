@@ -1,3 +1,4 @@
+/* IMPORT */
 /* Estilos generales */
 * {
   margin: 0;
@@ -70,10 +71,10 @@ footer {
   margin: 0;
 }
 
-.parrafo1 {
+.parrafo1, .parrafo2 {
   margin: 20px;
   border: 10px groove;
-  color: yellow;
+  color: black;
 }
 
 /*Bordes imagenes y altura*/
@@ -204,10 +205,10 @@ form {
     color: yellow;
   }
 
-  .parrafo1 {
+  .parrafo1, .parrafo2 {
     margin: 20px;
     border: 10px groove;
-    color: yellow;
+    color: black;
   }
 
   /*Bordes imagenes y altura*/
@@ -302,10 +303,10 @@ form {
     height: 490px;
   }
 
-  .parrafo1 {
+  .parrafo1, .parrafo2 {
     margin: 20px;
     border: 10px groove;
-    color: yellow;
+    color: black;
   }
 
   /* Aplicando Grids al index*/
@@ -341,10 +342,10 @@ form {
     height: 270px;
   }
 
-  .parrafo1 {
+  .parrafo1, .parrafo2 {
     margin: 20px;
     border: 10px groove;
-    color: yellow;
+    color: black;
   }
 
   .bordesEquipo {
@@ -399,6 +400,31 @@ form {
     grid-column-gap: 10px;
     grid-row-gap: 15px;
   }
+}
+/*  MAPS Y MAP-GET */
+p {
+  background-color: #ebdf37;
+  text-align: center;
+  padding: 1rem;
+  font-size: 20px;
+}
+
+/*  EXTEND  */
+.parrafo1, .parrafo2 {
+  margin: 20px;
+  border: 10px groove;
+  color: black;
+}
+
+.parrafo2 {
+  background-color: #c7d8c7;
+  color: #252523;
+}
+
+/*  MIXIN  */
+form {
+  height: 500px;
+  width: 500px;
 }
 
 /*# sourceMappingURL=destino.css.map */

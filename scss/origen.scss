@@ -1,7 +1,51 @@
-// IMPORT
+/* IMPORT */
 @import "estilosgenerales";
 @import "menuprincipal";
 @import "bordesybody";
 @import "animyfondo";
 @import "formygrids";
 @import "responsive";
+
+/*  MAPS Y MAP-GET */
+
+
+$estilos: (
+    color: #ebdf37,
+    centro: center,
+    tFuente: 20px,
+    1rem : 1rem
+);
+
+p {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: map-get($estilos, 1rem);
+    font-size:map-get($estilos, tFuente);
+}
+
+/*  EXTEND  */
+
+.parrafo1 {
+    margin: 20px;
+    border: 10px groove;
+    color: black;
+}
+
+.parrafo2{
+    @extend .parrafo1;
+    background-color:rgb(199, 216, 199);
+    color:rgb(37, 37, 35);
+}
+
+/*  MIXIN  */
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+form {
+    @include sizes(500px, 500px);
+}
+
+
