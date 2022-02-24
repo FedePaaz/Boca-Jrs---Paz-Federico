@@ -16,7 +16,7 @@ $estilos: (
     1rem : 1rem
 );
 
-p {
+.parrafo1 {
     background-color: map-get($estilos, color);
     text-align: map-get($estilos, centro);
     padding: map-get($estilos, 1rem);
@@ -48,4 +48,10 @@ form {
     @include sizes(500px, 500px);
 }
 
+@mixin color ($color) {
+    color: $color;
+}
 
+p {
+    @include color(rgb(221, 217, 217))
+}

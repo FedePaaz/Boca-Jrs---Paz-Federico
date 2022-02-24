@@ -36,7 +36,7 @@ h3 {
 
 /*fondo de pantalla */
 main {
-    background-image: url(../fondo/fondoescudo.jpg);
+    background-image: url(../imagenes/fondoescudo.jpg);
     background-position:center;
     text-align: center;
 }
@@ -53,4 +53,20 @@ main {
     text-align: center;
     padding: 10px;
     color:  blue;
+}
+
+.acordeonBombo {
+    background: #062ca4;
+    background: linear-gradient(90deg, #062ca4 6%, rgba(238, 227, 6, 0.6899802157) 48%, #0013ff 100%);
+    color: rgb(34, 34, 29);
+    margin: 0;
+    text-align: center;
+}
+
+.color1 {
+    color: black;
+}
+
+.amarillo {
+    background:rgba(238, 227, 6, 0.6899802157)
 }
