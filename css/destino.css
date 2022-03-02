@@ -168,6 +168,45 @@ main {
   background: rgba(238, 227, 6, 0.6899802157);
 }
 
+.fondoBlanco {
+  background-color: #fffefe;
+  background-image: none;
+}
+
+.colorLetras {
+  color: #0b0472;
+}
+
+.colorLetra {
+  color: #3025cf;
+}
+
+.conEstrellasArriba::after {
+  content: "";
+  position: relative;
+  display: flex;
+  height: 25px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-image: url(../imagenes/escudos/estrellas.png);
+  background-size: inherit;
+  overflow: hidden;
+  background-position: 0px 50%;
+  background-repeat: repeat-x;
+}
+
+.numGrande {
+  position: relative;
+  text-align: center;
+  right: 16px;
+  color: #f1e8d3;
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 180px;
+  z-index: 5;
+}
+
 /*Formulario de contacto */
 form {
   padding: 50px;
@@ -336,9 +375,9 @@ form {
   /* Aplicando Grids al equipo*/
   .gridEquipo {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
-    grid-row-gap: 15px;
+    grid-row-gap: 10px;
   }
 }
 /*SMARTPHONE*/
@@ -398,7 +437,6 @@ form {
     padding: 50px;
     color: black;
     text-align: center;
-    background-color: whitesmoke;
   }
 
   /* Aplicando Grids al index*/
@@ -422,7 +460,6 @@ form {
   background-color: #ebdf37;
   text-align: center;
   padding: 1rem;
-  font-size: 20px;
 }
 
 /*  EXTEND  */
@@ -438,11 +475,6 @@ form {
 }
 
 /*  MIXIN  */
-form {
-  height: 500px;
-  width: 500px;
-}
-
 p {
   color: #ddd9d9;
 }

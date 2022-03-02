@@ -142,9 +142,9 @@
     /* Aplicando Grids al equipo*/
     .gridEquipo{
         display: grid;
-        grid-template-columns: repeat(2, 2fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 10px;
-        grid-row-gap: 15px;
+        grid-row-gap: 10px;
         }
     
     }
@@ -202,7 +202,6 @@
         padding: 50px;
         color: black;
         text-align: center;
-        background-color: whitesmoke;
         }
     
     /* Aplicando Grids al index*/

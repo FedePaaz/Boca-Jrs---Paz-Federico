@@ -12,7 +12,6 @@
 $estilos: (
     color: #ebdf37,
     centro: center,
-    tFuente: 20px,
     1rem : 1rem
 );
 
@@ -20,7 +19,6 @@ $estilos: (
     background-color: map-get($estilos, color);
     text-align: map-get($estilos, centro);
     padding: map-get($estilos, 1rem);
-    font-size:map-get($estilos, tFuente);
 }
 
 /*  EXTEND  */
@@ -39,14 +37,6 @@ $estilos: (
 
 /*  MIXIN  */
 
-@mixin sizes($width, $height) {
-    height: $height;
-    width: $width;
-}
-
-form {
-    @include sizes(500px, 500px);
-}
 
 @mixin color ($color) {
     color: $color;

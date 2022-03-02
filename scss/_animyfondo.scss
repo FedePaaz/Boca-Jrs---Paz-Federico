@@ -70,3 +70,42 @@ main {
 .amarillo {
     background:rgba(238, 227, 6, 0.6899802157)
 }
+
+.fondoBlanco {
+    background-color: rgb(255, 254, 254);
+    background-image: none;
+}
+
+.colorLetras {
+    color: #0b0472;
+}
+
+.colorLetra {
+    color: #3025cf;
+}
+
+.conEstrellasArriba::after {
+    content: "";
+    position: relative;
+    display: flex;
+    height: 25px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-image: url(../imagenes/escudos/estrellas.png);
+    background-size: inherit;
+    overflow: hidden;
+    background-position: 0px 50%;
+    background-repeat: repeat-x;
+}
+
+.numGrande {
+    position: relative;
+    text-align: center;
+    right: 16px;
+    color: rgb(241, 232, 211);
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 180px;
+    z-index: 5;
+}
