@@ -197,11 +197,11 @@ main {
 }
 
 .numGrande {
-  position: relative;
+  position: flex;
   text-align: center;
   right: 16px;
   color: #f1e8d3;
-  font-size: 200px;
+  font-size: 180px;
   font-weight: 700;
   line-height: 180px;
   z-index: 5;
